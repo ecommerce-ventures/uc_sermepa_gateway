@@ -1,0 +1,22 @@
+<?php
+/**
+ * Implementation of hook_uninstall().
+ */
+function uc_sermepa_gateway_uninstall() {
+  variable_del('uc_sermepa_gateway_bankmode');
+  variable_del('uc_sermepa_gateway_encryption');
+  variable_del('uc_sermepa_gateway_ds_merchant_titular_test');
+  variable_del('uc_sermepa_gateway_ds_merchant_code_test');
+  variable_del('uc_sermepa_gateway_ds_merchant_signature_test');
+  variable_del('uc_sermepa_gateway_ds_merchant_terminal_test');
+  variable_del('uc_sermepa_gateway_ds_merchant_product_description_test');
+  variable_del('uc_sermepa_gateway_ds_merchant_currency_test');
+  variable_del('uc_sermepa_gateway_ds_merchant_url_test');
+  variable_del('uc_sermepa_gateway_ds_merchant_titular');
+  variable_del('uc_sermepa_gateway_ds_merchant_code');
+  variable_del('uc_sermepa_gateway_ds_merchant_signature');
+  variable_del('uc_sermepa_gateway_ds_merchant_terminal');
+  variable_del('uc_sermepa_gateway_ds_merchant_product_description');
+  variable_del('uc_sermepa_gateway_ds_merchant_currency');
+  variable_del('uc_sermepa_gateway_ds_merchant_url');
+}
