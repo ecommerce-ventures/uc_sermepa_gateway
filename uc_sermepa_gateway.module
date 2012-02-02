@@ -27,7 +27,7 @@ function uc_sermepa_gateway_charge($order_id, $amount, $data) {
   $order = uc_order_load($order_id);
 
   $pan = $order->payment_details['cc_number'];
-  $expiry = $order->payment_details['cc_exp_month'].round($order->payment_details['cc_exp_year']%100);
+  $expiry = sprintf("%02d",round($order->payment_details['cc_exp_year']%100)).sprintf("%02d", $order->payment_details['cc_exp_month']);
   $cvv = $order->payment_details['cc_cvv'];
 
   $config = uc_sermepa_gateway_get_config();
