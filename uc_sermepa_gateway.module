@@ -384,7 +384,7 @@ function uc_sermepa_gateway_get_config(){
     $config['uc_sermepa_gateway_ds_merchant_terminal'] = variable_get('uc_sermepa_gateway_ds_merchant_terminal', '001');
     $config['uc_sermepa_gateway_ds_merchant_product_description'] = variable_get('uc_sermepa_gateway_ds_merchant_product_description', '');
     $config['uc_sermepa_gateway_ds_merchant_currency'] = variable_get('uc_sermepa_gateway_ds_merchant_currency', '978');
-    $config['uc_sermepa_gateway_ds_merchant_url'] = variable_get('uc_sermepa_gateway_ds_merchant_url', 'https://sis-i.sermepa.es/sis/services/SerClsWSEntrada');
+    $config['uc_sermepa_gateway_ds_merchant_url'] = variable_get('uc_sermepa_gateway_ds_merchant_url', 'https://sis.sermepa.es/sis/services/SerClsWSEntrada');
   }
 
   return $config;
